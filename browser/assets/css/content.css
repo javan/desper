@@ -1,0 +1,33 @@
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+wallpaper-item figure {
+  position: relative;
+}
+
+wallpaper-item figure figcaption {
+  display: none;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  background-color: hsla(0, 5%, 5%, 0.3);
+}
+
+wallpaper-item figure:hover figcaption {
+  display: block;
+}
+
+wallpaper-item figure img {
+  width: 28vw;
+  height: 28vw;
+  object-fit: contain;
+}

@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden; /* Prevents rubber-band scrolling of the whole "page" */
+  color: var(--color);
+  background-color: #fff; /* To cover OSes with no default background color */
+  -webkit-user-select: none; /* disable selection */
+  -webkit-user-drag: none; /* disable dragging */
+  cursor: default; /* use default cursor */
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+}
+
+a {
+  color: var(--color-link);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.12em;
+  font-weight: 600;
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* enable text selection */
+.is-selectable {
+  -webkit-user-select: auto;
+  cursor: auto;
+}
+
+button {
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  -webkit-user-drag: none; /* disable dragging */
+}
